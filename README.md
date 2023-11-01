@@ -1,4 +1,4 @@
-# NoF3!
+# noF3!
 
 A simple Minecraft client mod built with Fabric that hides F3 coordinates, biome data, light levels, local difficulty and more.
 
@@ -6,16 +6,15 @@ A simple Minecraft client mod built with Fabric that hides F3 coordinates, biome
 
 ⚠ This mod relies on the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api).
 
-
 ⚠ This mod is NOT compatible with [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3).
 
 ⚠ If you want to remove debug info for everyone on your server, just type '/gamerule reducedDebugInfo true' and do not use this mod.
 
-
 <br>
 
+
 ### Download
-You can download this mod on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nof3_).
+You can download this mod on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nof3_) and [Modrinth](https://modrinth.com/mod/nof3!).
 
 <br>
 
