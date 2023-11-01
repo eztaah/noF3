@@ -3,13 +3,13 @@
 	"id": "nof3",
 	"version": "${version}",
 	"name": "noF3",
-	"description": "Mod that hides specific debug information like coordinates and biome details in Minecraft.",
+	"description": "A simple Minecraft client mod that hides F3 coordinates, biome data, light levels, local difficulty, and more.",
 	"authors": [
 		"EzTaah"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/EzTaah/noF3"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/nof3/icon.png",

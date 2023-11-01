@@ -17,6 +17,7 @@ public class ModifyTextDebugScreen {
     public void modifyTextLeftDebugScreen(CallbackInfoReturnable<List<String>> cir) {
         List<String> lines = cir.getReturnValue();
 
+        lines.removeIf(line -> line.startsWith("minecraft:"));
         lines.removeIf(line -> line.startsWith("XYZ:"));
         lines.removeIf(line -> line.startsWith("Block:"));
         lines.removeIf(line -> line.startsWith("Chunk:"));
@@ -31,18 +32,23 @@ public class ModifyTextDebugScreen {
     // Handle right side of the debug screen
     @Inject(method = "getRightText", at = @At("RETURN"), cancellable = true)
     public void modifyTextRightDebugScreen(CallbackInfoReturnable<List<String>> cir) {
-        List<String> lines= cir.getReturnValue();
-    
+
+        List<String> lines = cir.getReturnValue();
+        int targetedBlockIndex = -1;
+
+        // Search for "Targeted Block"
         for (int i = 0; i < lines.size(); i++) {
-            String currentLine = lines.get(i);
-            if (currentLine.startsWith("§nTargeted Block:")) {
-                lines.set(i, "§nTargeted Block: X, X, X");
-            }
-            else if (currentLine.startsWith("§nTargeted Fluid:")) {
-                lines.set(i, "§nTargeted Fluid: X, X, X");
+            if (lines.get(i).startsWith("§nTargeted Block:")) {
+                targetedBlockIndex = i;
+                break;
             }
         }
-    
+
+        // If the line is found
+        if (targetedBlockIndex != -1) {
+            lines.subList(targetedBlockIndex, lines.size()).clear();
+        }
+
         cir.setReturnValue(lines);
     }
 }
