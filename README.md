@@ -1,4 +1,4 @@
-# noF3!
+# noF3
 
 A simple Minecraft client mod built with Fabric that hides F3 coordinates, biome data, light levels, local difficulty and more.
 
