@@ -14,7 +14,7 @@ A simple Minecraft client mod built with Fabric that hides F3 coordinates, biome
 
 
 ### Download
-You can download this mod on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nof3_) and [Modrinth](https://modrinth.com/mod/nof3!).
+You can download this mod on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nof3_) and [Modrinth](https://modrinth.com/mod/nof3).
 
 <br>
 
