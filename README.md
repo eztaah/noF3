@@ -10,6 +10,8 @@ A simple Minecraft client mod built with Fabric that hides F3 coordinates, biome
 
 ⚠ If you want to remove debug info for everyone on your server, just type '/gamerule reducedDebugInfo true' and do not use this mod.
 
+⚠ This feature is already in vanilla minecraft, but mod is designed to be enforced on players by modpack developers, as it cannot be disabled through the in-game settings.
+
 <br>
 
 
